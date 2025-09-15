@@ -34,6 +34,8 @@ public class UI_Joystick : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     {
         _handler.transform.position = _touchPos;
         _moveDir = Vector2.zero;
+
+        Managers.Game.MoveDir = Vector2.zero;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -43,6 +45,8 @@ public class UI_Joystick : MonoBehaviour, IPointerClickHandler, IPointerDownHand
 
         _moveDir = touchDir.normalized;
         _handler.transform.position = _touchPos + (_moveDir * dist);
+
+        Managers.Game.MoveDir = _moveDir;
     }
 
 }

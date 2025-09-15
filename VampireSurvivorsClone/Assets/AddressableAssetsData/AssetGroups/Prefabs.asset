@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Prefabs
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Prefabs
+  m_GUID: 0db6cd60a79b6d94fb27b302a2783cb3
+  m_SerializeEntries:
+  - m_GUID: 02ec377a9acc3de4ea01132c8febf8ab
+    m_Address: Slime_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0a5eb6e1379e5749bbb65518109f887
+    m_Address: Snake_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2985b5e0fe57a84986b326aeb658558
+    m_Address: Goblin_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e06266daa663c6b459fbe5d51d8f26cb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fda58a8b68e39224fb40078fbce1c5a4, type: 2}
+    - {fileID: 11400000, guid: e183fe048c4c7d4409ac0a5f0fdee056, type: 2}
