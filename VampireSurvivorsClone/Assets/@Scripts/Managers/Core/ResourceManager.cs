@@ -27,6 +27,13 @@ public class ResourceManager
             Debug.Log($"[{key}] is not loaded");
             return null;
         }
+
+        // Pooling
+        if (pooling)
+        {
+            return Managers.Pool.Pop(prefab);
+        }
+
         GameObject go = UnityEngine.Object.Instantiate(prefab, parent);
         go.name = prefab.name;
         return go;
@@ -39,6 +46,12 @@ public class ResourceManager
             return;
         }
 
+        if(Managers.Pool.Push(go))
+        {
+            return;
+        }
+
+        // 인위적으로 삭제
         GameObject.Destroy(go);
     }
 

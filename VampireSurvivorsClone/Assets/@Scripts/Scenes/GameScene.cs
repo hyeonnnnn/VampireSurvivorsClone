@@ -23,8 +23,12 @@ public class GameScene : MonoBehaviour
 
     }
 
+    SpawningPool _spawningPool;
+
     void StartLoaded()
     {
+        _spawningPool = gameObject.AddComponent<SpawningPool>();
+
         var player = Managers.Object.Spawn<PlayerController>();
 
         for (int i = 0; i < 10; i++)
